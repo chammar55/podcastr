@@ -1,24 +1,26 @@
 @import "tailwindcss";
 
-
 /* @tailwind base;
-/* @tailwind components; */ 
-@tailwind utilities;
+/* @tailwind components; */
+/* @tailwind utilities; */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html {
   background-color: #101114;
 }
 
-
 @layer utilities {
-   .nav-focus {
-    background: linear-gradient(270deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.00) 100%);
+  .nav-focus {
+    background: linear-gradient(
+      270deg,
+      rgba(255, 255, 255, 0.06) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
   }
 
   .input-class {
@@ -154,29 +156,30 @@ html {
   color: #f97535;
 }
 
-
-@theme{
+@theme {
+  --container-padding: 2rem;
   --breakpoint-2xl: 1400px;
 
-  --color-white-1: #FFFFFF;
+  --color-white-1: #ffffff;
   --color-white-2: rgba(255, 255, 255, 0.72);
   --color-white-3: rgba(255, 255, 255, 0.4);
   --color-white-4: rgba(255, 255, 255, 0.64);
-  --color-white-5: rgba(255, 255, 255, 0.80);
+  --color-white-5: rgba(255, 255, 255, 0.8);
 
-  --color-black-1: #15171C;
+  --color-black-1: #15171c;
   --color-black-2: #222429;
   --color-black-3: #101114;
   --color-black-4: #252525;
-  --color-black-5: #2E3036;
-  --color-black-6: #24272C;
-  
-  --color-orange-1: #F97535;
-  --color-gray-1: #71788B;
+  --color-black-5: #2e3036;
+  --color-black-6: #24272c;
 
+  --color-orange-1: #f97535;
+  --color-gray-1: #71788b;
 
   --text-gray-1: text-[16px];
+  --background-nav-focus: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
-
-
-
